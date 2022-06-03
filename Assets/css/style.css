@@ -33,14 +33,24 @@ html {
   }
 
   nav {
+    display: none;
     padding: 10px;
     grid-area: nav;
     background: rgb(250 193 52);
     color: whitesmoke;
     display: flex;
-    justify-content: center;
+    justify-content: start;
   }
-  
+
+.textnav{
+display: none;
+}
+
+.textmsb{
+padding-left: 10%;
+}
+
+
   .textnav {
     text-align: center;
     padding-top: 10%;
@@ -52,9 +62,14 @@ html {
     flex-wrap: nowrap;
   }
   
-  .fa-solid {
-    padding-right: 5px;
-    padding-top: 5%;
+  .fa-child-reaching{
+    font-size: 30px;
+  }
+
+
+  .fa-bars{
+padding-left: 100%;
+font-size: 30px;
   }
 
   
@@ -152,6 +167,10 @@ nav {
 .fa-solid {
   padding-right: 5px;
   padding-top: 5%;
+}
+
+.fa-bars{
+  display: none;
 }
 
 /*Footer */
