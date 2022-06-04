@@ -21,15 +21,14 @@ html {
 
   footer {
     grid-area: footer;
-    background:black;
+    background: black;
     color: whitesmoke;
     padding: 10px;
     text-align: center;
   }
-  
+
   .fa-brands {
     padding-right: 5%;
-
   }
 
   nav {
@@ -42,60 +41,54 @@ html {
     justify-content: start;
   }
 
-.textnav{
-display: none;
-}
+  .textnav {
+    display: none;
+  }
 
-.textmsb{
-padding-left: 10%;
-}
-
+  .textmsb {
+    padding-left: 10%;
+  }
 
   .textnav {
     text-align: center;
     padding-top: 10%;
   }
-  
+
   .name {
     padding-top: 10px;
     display: flex;
     flex-wrap: nowrap;
   }
-  
-  .fa-child-reaching{
+
+  .fa-child-reaching {
     font-size: 30px;
   }
 
-
-  .fa-bars{
-padding-left: 100%;
-font-size: 30px;
+  .fa-bars {
+    padding-left: 50%;
+    font-size: 30px;
   }
 
-  
-.orden {
+  .orden {
     text-align: center;
-}
-  
-  .filter-container{
+  }
+
+  .filter-container {
     grid-area: filtros;
-    background:black;
+    background: black;
     color: whitesmoke;
     padding: 10px;
     justify-content: center;
-}
+  }
 
-.box {
+  .box {
     display: flex;
     flex-direction: column;
     border: solid 1px black;
     background-color: white;
     text-align: center;
     justify-content: space-between;
-
-
   }
-
 
   .main {
     border: solid 1px black;
@@ -105,11 +98,10 @@ font-size: 30px;
     padding: 1rem;
     grid-area: main;
     padding: 10px;
-  justify-content: center;
+    justify-content: center;
     color: black;
     padding-left: 5%;
   }
-
 
   .pagination a {
     color: black;
@@ -117,11 +109,8 @@ font-size: 30px;
     padding: 10px 10px;
     text-decoration: none;
     border: 1px solid #ddd;
-
+  }
 }
-
-}
-
 
 /*desktop */
 @media (min-width: 576px) {
@@ -135,121 +124,117 @@ font-size: 30px;
       "footer main ";
   }
 
+  /*Filter */
 
-/*Filter */
+  .orden {
+    text-align: center;
+  }
 
-.orden {
-  text-align: center;
-}
+  .filter-container {
+    grid-area: filtros;
+    background: black;
+    color: whitesmoke;
+    padding: 10px;
+  }
 
-.filter-container{
-  grid-area: filtros;
-  background:black;
-  color: whitesmoke;
-  padding: 10px;
+  /*Menú*/
+  nav {
+    padding: 10px;
+    grid-area: nav;
+    background: rgb(250 193 52);
+    color: whitesmoke;
+    display: flex;
+  }
 
-}
+  .textnav {
+    text-align: center;
+    padding-top: 10%;
+  }
 
+  .textnav a:hover {
+    background-color: rgb(172, 46, 46);
+  }
 
-/*Menú*/
-nav {
-  padding: 10px;
-  grid-area: nav;
-  background: rgb(250 193 52);
-  color: whitesmoke;
-  display: flex;
-}
+  .name {
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+  }
 
-.textnav {
-  text-align: center;
-  padding-top: 10%;
-}
+  .fa-solid {
+    padding-right: 5px;
+    padding-top: 5%;
+  }
 
-.textnav a:hover{
-  background-color: rgb(172, 46, 46);
-}
+  .fa-bars {
+    visibility: hidden;
+  }
 
-.name {
-  padding-top: 10px;
-  display: flex;
-  flex-wrap: nowrap;
-}
+  /*Footer */
+  footer {
+    grid-area: footer;
+    background: black;
+    color: whitesmoke;
+    padding: 10px;
+    text-align: center;
+  }
 
-.fa-solid {
-  padding-right: 5px;
-  padding-top: 5%;
-}
+  .fa-brands {
+    padding-right: 5%;
+    padding-bottom: 10%;
+  }
 
-.fa-bars{
-  visibility: hidden
+  /*Main Content */
 
-}
+  .main {
+    border: solid 1px black;
+    height: 100vh;
+    display: flex;
+    flex-flow: wrap;
+    gap: 2rem;
+    padding: 1rem;
+    grid-area: main;
+    padding: 10px;
 
-/*Footer */
-footer {
-  grid-area: footer;
-  background:black;
-  color: whitesmoke;
-  padding: 10px;
-  text-align: center;
-}
+    color: black;
+    padding-left: 5%;
+  }
+  .box {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px black;
+    background-color: white;
+    text-align: center;
+    justify-content: space-between;
+    width: 20%;
+  }
 
-.fa-brands {
-  padding-right: 5%;
-  padding-bottom: 10%;
-}
+  .description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-/*Main Content */
+  .pagination {
+    display: flex;
+    flex: 1 1 100%;
+    justify-content: center;
+  }
 
-.main {
-  border: solid 1px black;
-  height: 100vh;
-  display: flex;
-  flex-flow : wrap;
-  gap: 2rem;
-  padding: 1rem;
-  grid-area: main;
-  padding: 10px;
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 10px 10px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+  }
 
-  color: black;
-  padding-left: 5%;
-}
-.box {
-  display: flex;
-  flex-direction: column;
-  border: solid 1px black;
-  background-color: white;
-  text-align: center;
-  justify-content: space-between;
-  width: 20%;
-}
+  .pagination a.active {
+    background-color: #4caf50;
+    color: white;
+  }
 
-.description{
-  display: flex;    
-  flex-wrap: wrap;
-justify-content: center;
-}
-
-.pagination {
-  display: flex;
-  flex: 1 1 100%;
-  justify-content: center;
-}
-
-.pagination a {
-  color: black;
-  float: left;
-  padding: 10px 10px;
-  text-decoration: none;
-  border: 1px solid #ddd;
-}
-
-.pagination a.active {
-  background-color: #4caf50;
-  color: white;
-}
-
-.pagination a:hover:not(.active) {
-  background-color: #ddd;
-}
+  .pagination a:hover:not(.active) {
+    background-color: #ddd;
+  }
 }
